@@ -1,5 +1,7 @@
 Ashley
 ======
+Updated by Scott Candey for personal usage
+
 
 A Responsive and Readable Theme for Tumblr, utilizing Google Web Fonts
 
@@ -71,5 +73,3 @@ Use any Google Web Font. Defaults to Gentium Book.
     ```
 
 6. Click *Update Preview*, then *Save*
-
-
