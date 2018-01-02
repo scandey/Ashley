@@ -26,7 +26,6 @@
     {block:IfGoogleWebFont}
       <link href='http://fonts.googleapis.com/css?family={text:GoogleWebFontURL}' rel='stylesheet' type='text/css'>
     {/block:IfGoogleWebFont}
-    <script src=“https://cdn.rawgit.com/humphreybc/tumblr-infinite-scroll/master/infinite-scroll.js”></script>
     <meta name=viewport content='width=device-width, initial-scale=1'>
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -331,7 +330,6 @@
 				{block:TagPage}
 					<h2 class="h1">#{Tag}</h2>
 				{/block:TagPage}
-        <div class=“autopagerize_page_element”>
   				{block:Posts}
   					<article class="post {PostType}">
   						{block:Text}
@@ -456,8 +454,6 @@
     				{/block:PostNotes}
 
   				{/block:Posts}
-				</div>
-        <!--
 				{block:Pagination}
 					<div class="pagination p">
 						<span class="previous">{block:PreviousPage}<a href="{PreviousPage}" class="previous">{/block:PreviousPage}&laquo; Previous{block:PreviousPage}</a>{/block:PreviousPage}</span>
@@ -465,12 +461,10 @@
 						<span class="next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}Next &raquo;{block:NextPage}</a>{/block:NextPage}</span>
 					</div>
 				{/block:Pagination}
-			-->
 			</section> <!-- /posts -->
 		</div> <!-- /content -->
 	
 	<footer class="small wrap">
-    <!--
   	{block:HasPages}
   		<ul class="pages">
 				{block:Pages}
@@ -478,7 +472,6 @@
 				{/block:Pages}
   		</ul>
 		{/block:HasPages}
-    -->
 		{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
 	  {block:IfColophon}<p class="small">{text:Colophon}</p>{block:IfColophon}
 	</footer>
